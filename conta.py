@@ -13,4 +13,7 @@ class Conta:
         self.balance += num
 
     def saca(self, num):
-        self.balance -= num
+        if self.balance-num > 0:
+            self.balance -= num
+        else:
+            print("Você não tem saldo suficiente")
