@@ -8,3 +8,9 @@ class Conta:
 
     def extrato(self):
         return self.balance
+
+    def deposita(self, num):
+        self.balance += num
+
+    def saca(self, num):
+        self.balance -= num
